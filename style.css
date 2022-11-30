@@ -1,1 +1,68 @@
+.formularz {
+    max-width: 30%;
+    margin: auto;
+}
 
+.formularz h2 {
+    text-align: center;
+}
+
+.tabela {
+    max-width: 80%;
+    margin: auto;
+}
+
+.tabela tr:first-child {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #3f3f4e;
+    color: #fff;
+}
+
+.tabela td {
+    text-align: center;
+}
+
+.nazwa td {
+    text-align: left;
+}
+
+.functional {
+    width: 5%;
+}
+
+.formularzEdycji {
+    max-width: 30%;
+    margin: auto;
+    visibility: hidden;
+}
+
+#suma {
+    margin-left: 7.75%;
+    font-weight: bold;
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+.form-button {
+    padding-top: 10px;
+    padding-left: 42%;
+}
+
+#icon-edit {
+    color: #aef359;
+}
+
+#icon-edit:hover {
+    color: #03ac13;
+}
+
+#icon-delete {
+    color: #d0312d;
+}
+
+#icon-delete:hover {
+    color: #900d09;
+}
