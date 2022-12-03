@@ -64,7 +64,7 @@ function dodajDoTabeli(id, produkt) {
     let edytuj = wiersz.insertCell(5);
     let usun = wiersz.insertCell(6);
     lp.innerHTML = id + 1;
-    nazwa.innerHTML = "<td class='nazwa'>" + produkt.nazwa + "</td>";
+    nazwa.innerHTML = '<p style="text-align:left">' + produkt.nazwa + '</p>';
     ilosc.innerHTML = produkt.ilosc;
     cena.innerHTML = parseFloat(produkt.cena).toFixed(2);
     suma.innerHTML = parseFloat(produkt.suma).toFixed(2);

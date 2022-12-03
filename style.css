@@ -1,3 +1,7 @@
+h2{
+    padding-top: 50px;
+}
+
 .formularz {
     max-width: 30%;
     margin: auto;
@@ -5,6 +9,7 @@
 
 .formularz h2 {
     text-align: center;
+    padding-top: 0;
 }
 
 .tabela {
@@ -19,12 +24,13 @@
     color: #fff;
 }
 
-.tabela td {
+.tabela td{
     text-align: center;
 }
 
-.nazwa td {
-    text-align: left;
+.razem{
+    margin-left: 60%;
+    margin-right: 7.75%;
 }
 
 .functional {
