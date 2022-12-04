@@ -2,16 +2,7 @@
 let naglowek = document.createElement("h2");
 naglowek.style.textAlign = "center";
 var d = new Date();
-var aktualnaData =
-    d.getDate() +
-    "-" +
-    (d.getMonth() + 1) +
-    "-" +
-    d.getFullYear() +
-    " " +
-    d.getHours() +
-    ":" +
-    String(d.getMinutes()).padStart(2, "0");
+var aktualnaData = d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
 naglowek.textContent = "Paragon z dnia " + aktualnaData;
 document.body.prepend(naglowek);
 
@@ -48,8 +39,7 @@ function sumuj() {
     listaProduktow.forEach((produkt) => {
         sumaCalosci += produkt.suma;
     });
-    document.getElementById("suma").innerHTML =
-        parseFloat(sumaCalosci).toFixed(2);
+    document.getElementById("suma").innerHTML = parseFloat(sumaCalosci).toFixed(2);
 }
 sumuj();
 
@@ -98,8 +88,7 @@ function usunProdukt(prod) {
 const formularzEdycji = document.getElementById("formularzEdycji");
 
 function edytujProdukt(prod) {
-    document.getElementsByClassName("formularzEdycji")[0].style.visibility =
-        "visible";
+    document.getElementsByClassName("formularzEdycji")[0].style.visibility = "visible";
     var edytowanyId = prod.parentNode.parentNode.rowIndex - 1;
     var produktEdytowany = listaProduktow[edytowanyId];
     formularzEdycji.nazwa.value = produktEdytowany.nazwa;
@@ -122,13 +111,7 @@ let sortujRosnaco = [];
 function sortuj(n) {
     /* funkcja sort sortuje od najmniejszej do największej wartości, dlatego
                             kiedy użytkownik spróbuje posortować jeszcze raz tablica się odwróci */
-    sortujRosnaco[n] == false ?
-        (sortujRosnaco[n] = true) :
-        (sortujRosnaco[n] = false);
-    if (n == 0) {
-        // sortowanie po lp, odwracamy tablicę
-        listaProduktow.reverse();
-    }
+    sortujRosnaco[n] == false ? (sortujRosnaco[n] = true) : (sortujRosnaco[n] = false);
     if (n == 1) {
         listaProduktow.sort((a, b) => a.nazwa.localeCompare(b.nazwa));
     }
