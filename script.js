@@ -105,6 +105,11 @@ function edytujProdukt(prod) {
     };
 }
 
+//funkcja odpowiedzialna za ukrycie formularza edycji
+function anuluj(){
+    document.getElementsByClassName("formularzEdycji")[0].style.visibility = "hidden";
+}
+
 // funkcja odpowiedzialna za zmianę kolejności produktów
 let sortujRosnaco = [];
 
